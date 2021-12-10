@@ -1,0 +1,67 @@
+<html>
+<head>
+    <style>
+
+        body {
+              width: 200px;
+              height: 200px;
+              
+            }
+            div { 
+              box-sizing: border-box;
+              width: 100px; 
+              height: 100px; 
+              margin: 0;
+              padding: 0;  
+              border: 1px solid #404040;
+              background-color: #00FF23;
+              right: 50px;
+            }
+            
+            .clase {
+                background-color: #444444;
+            }
+            p{
+                position: sticky;
+            }
+            </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+contador=1;
+
+$(document).ready(function(){
+  $(".p1").click(function(){
+      
+    width1=Math.floor( Math.random() * 200 );
+    height=Math.floor( Math.random() * 150 );
+
+    var1=Math.floor( Math.random() * 150 );
+    var2=Math.floor( Math.random() * 150 );
+    var3=Math.floor( Math.random() * 150 );
+
+    $("div").animate({width: Math.random()*(250-150)+150});
+    $("div").animate({height: Math.random()*(100-150)+150});
+    $("div").animate({left: Math.random()*(250-150)+150});
+    $("div").animate({top: Math.random()*(170-150)+150});
+    $("div").animate({right: Math.random()*(300-150)+150});
+
+    $("#test1").text(contador);
+   
+    contador++;
+
+
+  });
+});
+
+
+
+</script>
+</head>
+<body>
+
+    <div class="p1"></div>
+    <p id=test1></p>
+
+</body>
+</html>

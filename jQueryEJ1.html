@@ -1,0 +1,65 @@
+<html>
+<head>
+    <style>
+
+        body {
+              width: 200px;
+              height: 200px;
+              border: solid 1px #000;
+            }
+            div { 
+              box-sizing: border-box;
+              float: left;
+              width: 50px; 
+              height: 50px; 
+              margin: 0;
+              padding: 0;  
+              border: 1px solid #404040;
+            }
+            
+            .clase {
+                background-color: #444444;
+            }
+            </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".p1").hover(function(){
+    $(this).addClass("clase");
+  },
+  function(){
+    $(this).removeClass("clase");
+  }); 
+});
+
+$(document).ready(function(){
+  $(".p1").click(function(){
+    $(this).css("background-color", "#00FF23");
+  });
+});
+
+
+
+</script>
+</head>
+<body>
+
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+    <div class="p1"></div>
+
+</body>
+</html>
