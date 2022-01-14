@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #2196F3;
+  padding: 10px;
+  height: 25%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+div:hover {
+  background-color: green;
+  color: black;
+}
+img {
+    width: 150px;
+    height: 150px;
+}
+</style>
+<script>
+
+$(document).ready(function(){
+        $(".foto").click(function(){
+            $(this).animate({width: "0px"});
+        });
+    });
+
+</script>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+
+<div class="grid-container">
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto1</p></div>
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto2</p></div>
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto3</p></div>  
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto4</p></div>
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto5</p></div>
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto6</p></div>  
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto7</p></div>
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto8</p></div>
+  <div class="grid-item"><img class="foto" src="https://ep01.epimg.net/elviajero/imagenes/2017/06/01/actualidad/1496332304_582513_1496333053_noticia_normal.jpg"><p>Foto9</p></div>  
+</div>
+
+</body>
+</html>

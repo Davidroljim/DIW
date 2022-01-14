@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+
+        div { 
+              box-sizing: border-box;
+              float: left;
+              
+              margin: 0;
+              padding: 0;  
+              border: 1px solid #404040;
+              text-align: center;
+              
+            }
+
+    </style>
+    <script>
+    
+
+    
+    
+    $(document).ready(function(){
+        $(".p1").click(function(){
+            $("video").animate({width: "95%"});
+            $("video").animate({height: "50%"});
+        });
+    });
+
+    $(document).ready(function(){
+        $(".p2").click(function(){
+            $("video").animate({width: "65%"});
+            $("video").animate({height: "50%"});
+        });
+    });
+
+    $(document).ready(function(){
+        $(".p3").click(function(){
+            $("video").animate({width: "300px"});
+            $("video").animate({height: "50%"});
+        });
+    });
+    </script>
+
+</head>
+<body>
+    
+    <div class="p1">Modo Cine</div>
+    <div class="p2">Estandar</div>
+    <div class="p3">Minireproductor</div>
+    <video class="video" width="320" height="240" controls autoplay muted>
+        <source src="cancionProk.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+</body>
+</html>

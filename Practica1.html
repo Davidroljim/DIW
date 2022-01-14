@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+
+        div { 
+              box-sizing: border-box;
+              float: left;
+              width: 50px; 
+              height: 50px; 
+              margin: 0;
+              padding: 0;  
+              border: 1px solid #404040;
+              
+            }
+
+    </style>
+    <script>
+    
+
+    function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min)
+    }
+
+    $(document).ready(function(){
+        $(".p1").click(function(){
+            $(this).css("background-color", "hsl("+randomIntFromInterval(0,255)+","+randomIntFromInterval(0,100)+"%,50%)");
+        });
+    });
+
+    </script>
+
+</head>
+<body>
+    
+    <div class="p1"></div>
+
+</body>
+</html>

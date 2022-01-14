@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+
+        div { 
+              box-sizing: border-box;
+              float: left;
+              width: 20px;
+              margin: 10px;
+              padding: 0;  
+              border: 1px solid #404040;
+              text-align: center;
+              display: block;
+              position: relative;
+    
+              
+            }
+
+    </style>
+    <script>
+    
+
+    
+    
+    $(document).ready(function(){
+        $(".p1").click(function(){
+            $(this).animate({float: "right"});
+        });
+    });
+
+    $(document).ready(function(){
+        $(".p2").click(function(){
+            $(this).animate({float: "left",position: "absolute"});
+        });
+    });
+
+    $(document).ready(function(){
+        $(".p3").click(function(){
+            $("video").animate({width: "300px"});
+            $("video").animate({height: "50%"});
+        });
+    });
+    </script>
+
+</head>
+<body>
+    
+    <div class="p1">&#129409;</div>
+    <div class="p2">&#8987;</div>
+    <div class="p3">&#8986;</div>
+    <div class="p1">&#129409;</div>
+    <div class="p2">&#8987;</div>
+    <div class="p3">&#8986;</div>
+    <div class="p1">&#129409;</div>
+    <div class="p2">&#8987;</div>
+    <div class="p3">&#8986;</div>
+    <div class="p1">&#129409;</div>
+    
+    
+</body>
+</html>

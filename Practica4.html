@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes effect {
+  0%   {transform: rotate(60deg); left:0px; top:0px;}
+  25%  {transform: rotate(700deg); left:25%; top:0px;}
+  50%  {transform: rotate(70deg); left:50%; top:0px;}
+  75%  {transform: rotate(900deg); left:75%; top:0px;}
+  100% {transform: rotate(700deg); left:100%; top:0px;}
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+</style>
+<script>
+function blink(){
+    let x =document.getElementById("furbo")
+    x.style.animation="effect 1s infinite"
+}
+</script>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div id ="furbo" class="p1"><img src="https://cdn-icons-png.flaticon.com/512/53/53283.png"></div>
+<button id="eff" onClick="blink()">Click Here</button>
+
+</body>
+</html>
+
+
