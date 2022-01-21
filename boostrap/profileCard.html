@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+
+    .cara {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .info {
+        width: 40px;
+    }
+
+    button{
+        color: white;
+    }
+
+    .furbo {
+        width: 25%;
+        text-align: center;
+        align-items: center;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="card mb-3" style="max-width: 1000px; background-color: #151934; color: white;">
+
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_oRgZpe1-OPJwxPT5UfEZ0oNLdzfumrEM9A&usqp=CAU" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title">NAME: David Roldán Jiménez</h5>
+              <p class="card-text">PROFILE: Desarrollador web</p>
+              <p class="card-text">PLATFORM: 
+                
+                <button type="button" class="btn btn-lg btn-Light" data-bs-toggle="popover" title="HTML" data-bs-content="HTML 5 es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. "><img class="info" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"></button>
+                <button type="button" class="btn btn-lg btn-Light" data-bs-toggle="popover" title="PHP" data-bs-content="PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.​ "><img class="info" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png"></button>
+                <button type="button" class="btn btn-lg btn-Light" data-bs-toggle="popover" title="JS" data-bs-content="JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos."><img class="info" src="https://ayudawp.com/wp-content/uploads/2017/01/javascript-logo-escudo.png"></button> 
+            </p> 
+            </div>
+          </div>
+
+          <div class="col-md-3">
+
+            <p>Soy David Roldán Jiménez estudiante de desarrollo de aplicaciones web</p>
+
+          </div>
+          <div class="col-md-3">
+              <button type="button" class="btn btn-Light" data-bs-toggle="tooltip" data-bs-placement="top" title="2.3K Followers">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1200px-Twitter-logo.svg.png" class="furbo" alt="...">
+              </button>
+
+            
+          </div>
+          <div class="col-md-3">
+            <button type="button" class="btn btn-Light" data-bs-toggle="tooltip" data-bs-placement="top" title="1.5K Followers">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" class="furbo" alt="...">
+              </button>
+
+          </div>
+          <div class="col-md-3">
+            <button type="button" class="btn btn-Light" data-bs-toggle="tooltip" data-bs-placement="top" title="3.4K Followers">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" class="furbo" alt="...">
+              </button>
+          </div>
+        </div>
+      </div>
+      <script>
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+      
+      <script>
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
+      </script>
+
+</body>
+</html>
+
